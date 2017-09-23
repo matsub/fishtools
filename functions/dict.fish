@@ -3,9 +3,11 @@ function dict -d "translate English and Japanese"
         switch $arg
         case -I --init
             pushd $XDG_CONFIG_HOME/fisherman/fishtools
-            git submodule init
-            git submodule update
+            # install ejtrans
+            git submodule init; git submodule update
             pushd ejtrans
+            # install EJDict
+            git submodule init; git submodule update
             python init_dict.py
             popd
             popd
