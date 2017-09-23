@@ -1,7 +1,7 @@
 function dict -d "translate English and Japanese"
     for arg in $argv
         switch $arg
-        case -I --install
+        case -I --init
             pushd $XDG_CONFIG_HOME/fisherman/fishtools
             git submodule init
             git submodule update
