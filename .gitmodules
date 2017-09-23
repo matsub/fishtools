@@ -1,0 +1,3 @@
+[submodule "ejtrans"]
+	path = ejtrans
+	url = https://github.com/matsub/ejtrans.git
