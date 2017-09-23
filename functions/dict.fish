@@ -1,6 +1,6 @@
 function dict -d "translate English and Japanese"
     for arg in $argv
-        switch ($arg)
+        switch $arg
         case -I --install
             pushd $XDG_CONFIG_HOME/fisherman/fishtools/ejtrans
             python init_dict.py

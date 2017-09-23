@@ -1,3 +1,3 @@
 test "current directory is home"
-    $HOME = $DIRNAME
+    $PWD = $DIRNAME
 end
