@@ -11,7 +11,7 @@ With [fisherman]
 
 ```
 fisher matsub/fishtools
-dict -init
+dict --init
 ```
 
 ## Requirements
