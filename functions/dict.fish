@@ -8,7 +8,7 @@ function dict -d "translate English and Japanese"
             pushd ejtrans
             # install EJDict
             git submodule init; git submodule update
-            python init_dict.py
+            python3 init_dict.py
             popd
             popd
             return
@@ -18,5 +18,5 @@ function dict -d "translate English and Japanese"
     end
 
     # execute dictionary
-    python $XDG_CONFIG_HOME/fisherman/fishtools/ejtrans/dictionary.py $word
+    python3 $XDG_CONFIG_HOME/fisherman/fishtools/ejtrans/dictionary.py $word
 end
